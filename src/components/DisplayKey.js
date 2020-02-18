@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Card, Container } from 'react-bootstrap';
 
-export class Key extends Component {
+export class DisplayKey extends Component {
   render() {
     return (
       <Container>
         <Card>
           <Card.Body>
-          Key
+          Keys
           </Card.Body>
         </Card>
       </Container>
@@ -15,4 +15,4 @@ export class Key extends Component {
   }
 }
 
-export default Key;
+export default DisplayKey;
