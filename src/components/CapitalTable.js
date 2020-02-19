@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Table } from 'react-bootstrap';
 
 const CapitalTable = props => (
@@ -19,7 +19,10 @@ const CapitalTable = props => (
           props.funds.map(fund => (
             <tr key={fund.id}>
               <td>{fund.name}</td>
-              <td>{fund.amount}</td>
+              <td>{`$`}{fund.amount}</td>
+              <td>{fund.element !== 'GRANT' ? fund.rate : -100 }{`%`}</td>
+              <td>{`$`}{fund.element !== 'GRANT' ? fund.returning : "(" + fund.returning + ")"}</td>
+              <td>{fund.element}</td>
               <td>
                 <button onClick={() => {
                   props.editRow(fund)

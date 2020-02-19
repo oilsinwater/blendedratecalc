@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button, Col, Container, Form, Row } from 'react-bootstrap';
+import { Button, Col, Container, Form } from 'react-bootstrap';
 
 
 const RemoveFund = props => {
@@ -41,9 +41,13 @@ const RemoveFund = props => {
             <Form.Control name="amount" type="text" value={fund.amount} onChange={handleInputChange} />
           </Col>
           <Col>
+            <Form.Label column>Rate</Form.Label>
+            <Form.Control name="rate" type="text" value={fund.rate} onChange={handleInputChange} />
+          </Col>
+          <Col>
             <Form.Label column>Element</Form.Label>
             <Form.Control name="element" required as='select' value={fund.element} onChange={handleInputChange}>
-              <option>Grant</option>
+              <option>GRANT</option>
               <option>MRI</option>
               <option>PRI</option>
             </Form.Control>

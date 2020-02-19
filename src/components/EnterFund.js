@@ -7,9 +7,9 @@ const EnterFund = props => {
   const initialFormState = {
     id: null,
     name: '',
-    amount: '',
-    rate: '',
-    return: '',
+    amount: 0,
+    rate: 0,
+    returning: 0,
     element: ''
   };
 
@@ -30,7 +30,7 @@ const EnterFund = props => {
       event.preventDefault()
       // prevents default form submission from firing
       if (!fund.name || !fund.amount || !fund.element) return
-      // validation to make sure empty values cannot be submitted 
+      // validation to make sure empty values cannot be submitted   
 
       props.addFund(fund)
       //sends user through the addUser function
@@ -47,9 +47,14 @@ const EnterFund = props => {
           <Form.Control name="amount" type="text" value={fund.amount} onChange={handleInputChange} />
         </Col>
         <Col>
+          <Form.Label column>Rate</Form.Label>
+          <Form.Control name="rate" type="text" value={fund.rate} onChange={handleInputChange} />
+        </Col>
+        <Col>
           <Form.Label column>Element</Form.Label>
           <Form.Control name="element" required as="select" value={fund.element} onChange={handleInputChange}>
-            <option>Grant</option>
+            <option>(choose)</option>
+            <option>GRANT</option>
             <option>MRI</option>
             <option>PRI</option>
           </Form.Control>
