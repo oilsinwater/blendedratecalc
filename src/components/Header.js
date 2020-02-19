@@ -5,11 +5,11 @@ export class Header extends Component {
   render() {
     return (
       <Container>
-      <Navbar>
-      <Navbar.Brand>
-      Full Spectrum Capital Partners
+        <Navbar>
+          <Navbar.Brand>
+            Product
       </Navbar.Brand>
-      </Navbar>
+        </Navbar>
       </Container>
     )
   }

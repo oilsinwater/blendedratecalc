@@ -9,7 +9,7 @@ export class Footer extends Component {
         <Navbar>
           <Navbar.Brand>
               <Navbar.Text>
-                2020 Full Spectrum Capital Partners, LLC.
+              2020..
           </Navbar.Text>
       </Navbar.Brand>
         </Navbar>
