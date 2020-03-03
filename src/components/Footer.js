@@ -9,7 +9,7 @@ export class Footer extends Component {
         <Navbar>
           <Navbar.Brand>
               <Navbar.Text>
-              2020..
+              2020 Copyright
           </Navbar.Text>
       </Navbar.Brand>
         </Navbar>

@@ -143,10 +143,13 @@ const App = () => {
             <EnterFund addFund={addFund} />
           </Row>
         )}
+
+      <br></br>
       <Row>
         <Col>
           <DisplayKey />
         </Col>
+
       </Row>
       <Footer />
     </Container>

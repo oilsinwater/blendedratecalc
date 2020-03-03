@@ -53,9 +53,13 @@ const RemoveFund = props => {
             </Form.Control>
           </Col>
           <Col>
-            <Button type="submit">Update fund</Button>
-            <Button onClick={() => props.setEditing(false)} className="button muted-button">Cancel</Button>
-          </Col>
+           </Col>
+        </Form.Row>
+        <Form.Row>
+        <br></br>
+        <br></br>
+        <Button type="submit">Update fund</Button>
+        <Button onClick={() => props.setEditing(false)} className="button muted-button">Cancel</Button>
         </Form.Row>
       </Form>
 

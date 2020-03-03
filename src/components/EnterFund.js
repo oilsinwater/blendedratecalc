@@ -59,9 +59,13 @@ const EnterFund = props => {
             <option>PRI</option>
           </Form.Control>
         </Col>
-        <Col>
-          <Button type="submit">Submit</Button>
-        </Col>
+      </Form.Row>
+      <Form.Row>
+      <Col>
+          <br></br>
+          <Button style={{ margin: "auto", width: "100%" }} size='lg' type="submit">Submit</Button>
+      </Col>
+
       </Form.Row>
     </Form>
   );
